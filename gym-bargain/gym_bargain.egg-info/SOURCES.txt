@@ -1,0 +1,7 @@
+README.md
+setup.py
+gym_bargain.egg-info/PKG-INFO
+gym_bargain.egg-info/SOURCES.txt
+gym_bargain.egg-info/dependency_links.txt
+gym_bargain.egg-info/requires.txt
+gym_bargain.egg-info/top_level.txt
