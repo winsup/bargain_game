@@ -89,8 +89,14 @@ class OneRLAgentEnv(gym.Env):
 
         return np.array(self.state), reward, done, {}
 
-    def reset(self):
-        self.state = self.np_random.uniform(low=-4, high=4, size=(2,))
+    def reset(self, init_state=None):
+        '''
+        init_state: list or array
+        '''
+        if init_state==None:
+            self.state = self.np_random.uniform(low=-4, high=4, size=(2,))
+        else:
+            self.state = np.array(init_state)
         self.steps_beyond_done = None
         return np.array(self.state)
 
